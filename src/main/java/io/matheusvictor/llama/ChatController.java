@@ -14,7 +14,7 @@ public class ChatController {
         this.chatClient = chatClient.build();
     }
 
-    @GetMapping
+    @GetMapping("/joke")
     public String joke() {
         return chatClient.prompt()
                 .user("Please tell me a computer science joke")
